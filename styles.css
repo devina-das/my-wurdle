@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.yesyes {
+    background-color: lightgreen;
+    border-color: green;
+}
+.yesno {
+    background-color: lightpink;
+    border-color: hotpink;
+}
+
+.winner {
+    color: lightgreen;
+    animation: spin ease-in-out 1s infinite;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+span {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin: 10px;
+    border: 5px, outset, black;
+    background-color: lightslategray;
+    border-radius: 10px;
+    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    font-family: "Bebas Neue", sans-serif;
+    border: 5px, outset, black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#output {
+    color: rgb(201, 48, 48);
+}
+#misc {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 70px;
+    margin: 10px;
+}
+
+body {
+    font-family: "Bebas Neue", sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg);
+        scale: 1;
+    }
+    50% {
+        scale: 2;
+        color: green;
+    }
+    100% {
+        transform: rotateX(360deg);
+        scale: 1;
+    }    
+}
